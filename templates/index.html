@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Prediction Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+    <style>
+
+        .file-input {
+            margin: auto;
+            padding-left: 450px;
+            padding-right: 450px;
+            padding-top: 200px;
+        }
+
+        .title {
+            text-align: center;
+            font-weight: bold;
+
+            font-size: 40px;
+            background-color: #f8f9fa;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            color: #273582;
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+    <div class="title">Sensor Wafer Fault Prediction</div>
+
+		<div class="col file-input">
+			<form action="/predict" method="POST" enctype="multipart/form-data">
+				<label for="">Upload dataset</label>
+				<div class="input-group mb-3 my-2">
+					<input type="file" multiple class="form-control" id="inputGroupFile01" name="files">
+				</div>
+				<center>
+					<div class="d-grid gap-2 col-3 mx-auto">
+						<button class="btn btn-primary my-2"  type="submit">Predict</button>
+					</div>
+				</center>
+			</form>
+		</div>
+	</div>
+
+
+
+</body>
+
+</html>
