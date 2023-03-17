@@ -1,7 +1,6 @@
 ## Wafer Fault Detection
 ### Application Link
-https://sensor-wafer-fault-prediction.herokuapp.com/
-
+https://waferfault-21d6.onrender.com
 Use all files from Prediction_Batch_Files as some files have scheme or data error which may give error.
 ### Problem Statement:
    
